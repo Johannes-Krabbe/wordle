@@ -6,6 +6,7 @@ import Confetti from "react-dom-confetti";
 import styles from "./game.module.scss";
 import Keyboard from "../keyboard/Keyboard";
 import wordlist from "@/assets/words";
+import { getSeededRandomNumber } from "@/helpers/random";
 
 export default function Game() {
   const [inputs, setInputs] = useState<string[]>([]);
@@ -14,7 +15,7 @@ export default function Game() {
   const [isNotWord, setIsNotWord] = useState(false);
 
   const [correctWord, setCorrectWord] = useState<string>(
-    wordlist[Math.floor(Math.random() * wordlist.length)].toUpperCase(),
+    wordlist[getSeededRandomNumber(wordlist.length)].toUpperCase(),
   );
 
   const [isDone, setIsDone] = useState(false);
@@ -27,7 +28,7 @@ export default function Game() {
     onEnter: () => {
       setIsNotWord(false);
       if (input.length < 5) return;
-      if (wordlist.includes(input) === false) {
+      if (wordlist.includes(input.toLowerCase()) === false) {
         setIsNotWord(true);
         return;
       }
