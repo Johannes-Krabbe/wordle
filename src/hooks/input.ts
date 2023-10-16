@@ -29,7 +29,9 @@ export const useInput = (options: {
         }
         if (!options.maxLength || input.length < options.maxLength) {
           if (!options.done) {
-            setInput(input + event.key);
+            if (event.key.match(/^[a-z]$/i)) {
+              setInput(input + event.key);
+            }
           }
         }
       }

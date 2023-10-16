@@ -12,7 +12,8 @@ export default function Game() {
   const [currentRow, setCurrentRow] = useState<number>(0);
 
   const [correctWord, setCorrectWord] = useState<string>(
-    wordlist[Math.floor(Math.random() * wordlist.length)].toUpperCase(),
+    //wordlist[Math.floor(Math.random() * wordlist.length)].toUpperCase(),
+    "AYYYY",
   );
 
   const [isDone, setIsDone] = useState(false);
@@ -36,7 +37,7 @@ export default function Game() {
   });
 
   useEffect(() => {
-    console.log(correctWord);
+    console.log("CORRECT_WORD:" + correctWord);
   }, []);
 
   return (
