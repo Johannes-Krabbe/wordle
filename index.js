@@ -7,7 +7,7 @@ const rowElements = [];
 const letterElements = [];
 
 const words = ["crate", "react", "pzazz"];
-const correctWord = "abaca";
+const correctWord = "aabbb";
 //words[Math.floor(Math.random() * words.length)];
 
 for (let i = 0; i < rowLength; i++) {
@@ -17,7 +17,7 @@ for (let i = 0; i < rowLength; i++) {
   for (let i = 0; i < letterLenght; i++) {
     let p = document.createElement("div");
     p.setAttribute("class", "letter");
-    p.style.backgroundColor = "lightgrey";
+    p.style.backgroundColor = "white";
     // p.textContent = "!";
 
     row.appendChild(p);
@@ -73,7 +73,7 @@ function checkWord() {
   }
 
   for (let i = 0; i < letterLenght; i++) {
-    if (letters[i].style.backgroundColor === "lightgrey") {
+    if (letters[i].style.backgroundColor === "white") {
       if (tmpCorrectWord.includes(letters[i].textContent)) {
         letters[i].style.backgroundColor = "orange";
         tmpCorrectWord[tmpCorrectWord.indexOf(letters[i].textContent)] = "0";
@@ -82,7 +82,7 @@ function checkWord() {
   }
 
   for (let i = 0; i < letterLenght; i++) {
-    if (letters[i].style.backgroundColor === "lightgrey") {
+    if (letters[i].style.backgroundColor === "white") {
       letters[i].style.backgroundColor = "grey";
     }
   }
