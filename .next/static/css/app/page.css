@@ -1,0 +1,151 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/row/Row.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Row_row__242ZR {
+  display: flex;
+  flex: column 1;
+  justify-content: center;
+}
+
+.Row_box___oL9D {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  margin: 2px;
+  line-height: 50px;
+}
+
+.Row_empty__BUysG {
+  border: 2px solid lightgrey;
+}
+
+.Row_filled__yuUec {
+  border: 2px solid grey;
+}
+
+.Row_correct__xAUxh {
+  color: white;
+  background-color: green;
+}
+
+.Row_wrong__240HI {
+  color: white;
+  background-color: grey;
+}
+
+.Row_semiCorrect__5zGcG {
+  color: white;
+  background-color: orange;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/keyboard/keyboard.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.keyboard_row__9xSyG {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  margin-bottom: 6px;
+}
+
+.keyboard_key___gLK8 {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 58px;
+  background-color: lightgrey;
+  border-radius: 7px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.keyboard_specialKey__G5Y1b {
+  width: 65px;
+  font-size: 12px;
+}
+
+.keyboard_correct__Qdbtf {
+  color: white;
+  background-color: green;
+}
+
+.keyboard_wrong__BjBHy {
+  color: white;
+  background-color: grey;
+}
+
+.keyboard_semiCorrect__n5yps {
+  color: white;
+  background-color: orange;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/game/game.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.game_confetti__WF1Nu {
+  width: 100%;
+  display: flex;
+  flex: column 1;
+  justify-content: center;
+}
+
+.game_keyboard__XuumD {
+  margin-top: 20%;
+}
+@media only screen and (max-width: 600px) {
+  .game_keyboard__XuumD {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/page.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_headder__J7jph {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid lightgrey;
+}
+.page_headder__J7jph h1 {
+  margin: 10px;
+  font-weight: 600;
+}
+
+.page_game__KOa_v {
+  margin-top: 25%;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/page.tsx","import":"Stint_Ultra_Condensed","arguments":[{"weight":"400","subsets":["latin"]}],"variableName":"headderFont"} ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* latin-ext */
+@font-face {
+  font-family: '__Stint_Ultra_Condensed_e7e4ba';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/e52148a18afdb68d-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Stint_Ultra_Condensed_e7e4ba';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/dcae68605babd24b-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Stint_Ultra_Condensed_Fallback_e7e4ba';src: local("Arial");ascent-override: 159.24%;descent-override: 42.05%;line-gap-override: 0.00%;size-adjust: 56.08%
+}.__className_e7e4ba {font-family: '__Stint_Ultra_Condensed_e7e4ba', '__Stint_Ultra_Condensed_Fallback_e7e4ba';font-weight: 400;font-style: normal
+}
+
