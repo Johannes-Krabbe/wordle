@@ -7,6 +7,7 @@ import styles from "./game.module.scss";
 import Keyboard from "../keyboard/Keyboard";
 import wordlist from "@/assets/words";
 import { getSeededRandomNumber } from "@/helpers/random";
+import { correctWords } from "@/assets/correctWords";
 
 export default function Game() {
   const [inputs, setInputs] = useState<string[]>([]);
@@ -15,7 +16,7 @@ export default function Game() {
   const [isNotWord, setIsNotWord] = useState(false);
 
   const [correctWord, setCorrectWord] = useState<string>(
-    wordlist[getSeededRandomNumber(wordlist.length)].toUpperCase(),
+    correctWords[getSeededRandomNumber(correctWords.length)].toUpperCase(),
   );
 
   const [isDone, setIsDone] = useState(false);
@@ -42,10 +43,6 @@ export default function Game() {
     maxLength: 5,
     done: isDone,
   });
-
-  useEffect(() => {
-    console.log("CORRECT_WORD:" + correctWord);
-  }, []);
 
   return (
     <div>
