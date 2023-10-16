@@ -10,4 +10,7 @@
 
 .game {
   margin-top: 10vh;
+  @media only screen and (max-width: 600px) {
+    margin-top: 2vh;
+  }
 }

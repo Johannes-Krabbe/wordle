@@ -30,7 +30,8 @@ export const useInput = (options: {
         if (!options.maxLength || input.length < options.maxLength) {
           if (!options.done) {
             if (event.key.match(/^[a-z]$/i)) {
-              setInput(input + event.key);
+              console.log(input + event.key);
+              setInput(input + event.key.toLowerCase());
             }
           }
         }
