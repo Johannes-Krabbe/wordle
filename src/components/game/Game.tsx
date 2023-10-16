@@ -11,9 +11,10 @@ export default function Game() {
   const [inputs, setInputs] = useState<string[]>([]);
   const [currentRow, setCurrentRow] = useState<number>(0);
 
+  const [isNotWord, setIsNotWord] = useState(false);
+
   const [correctWord, setCorrectWord] = useState<string>(
-    //wordlist[Math.floor(Math.random() * wordlist.length)].toUpperCase(),
-    "AYYYY",
+    wordlist[Math.floor(Math.random() * wordlist.length)].toUpperCase(),
   );
 
   const [isDone, setIsDone] = useState(false);
@@ -24,7 +25,12 @@ export default function Game() {
 
   const { input, clearInput, addToInput } = useInput({
     onEnter: () => {
+      setIsNotWord(false);
       if (input.length < 5) return;
+      if (wordlist.includes(input) === false) {
+        setIsNotWord(true);
+        return;
+      }
       setInputs([...inputs, input]);
       currentRow < 6 && setCurrentRow(currentRow + 1);
       if (input.toUpperCase() === correctWord) {
@@ -86,6 +92,11 @@ export default function Game() {
           );
         }
       })}
+      {isNotWord ? (
+        <div className={styles.notWord}>Not a word!</div>
+      ) : (
+        <div className={styles.notWord}></div>
+      )}
 
       <div className={styles.confetti}>
         <Confetti active={isDone} config={confettiConfig} />

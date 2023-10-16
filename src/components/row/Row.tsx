@@ -40,7 +40,14 @@ export default function Row({
             status = "correct";
             tmpCorrectWord[i] = "0";
             tmpCorrectLetters.push(input[i]?.toUpperCase());
-          } else if (tmpCorrectWord.includes(input[i]?.toUpperCase())) {
+          }
+        }
+        tmpStati.push(status);
+      }
+      for (let i = 0; i < 5; i++) {
+        let status: BoxStatus = undefined;
+        if (correctWord) {
+          if (tmpCorrectWord.includes(input[i]?.toUpperCase())) {
             status = "semi-correct";
             tmpCorrectWord[tmpCorrectWord.indexOf(input[i]?.toUpperCase())] =
               "0";
@@ -50,7 +57,9 @@ export default function Row({
             tmpWrongLetters.push(input[i]?.toUpperCase());
           }
         }
-        tmpStati.push(status);
+        if (!tmpStati[i]) {
+          tmpStati[i] = status;
+        }
       }
       setWrong([...wrong, ...tmpWrongLetters]);
       setSemiCorrect([...semiCorrect, ...tmpSemiCorrectLetters]);
